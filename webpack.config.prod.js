@@ -9,7 +9,7 @@ const PurgecssPlugin = require("purgecss-webpack-plugin");
 const PATHS = {
   src: path.join(__dirname, "src"),
 };
-
+// ! Посмотреть как сделать перенос шрифтов, картинок и иконок в прод (с помощью новых модулей assets)
 module.exports = {
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
@@ -34,6 +34,10 @@ module.exports = {
           },
           { loader: "postcss-loader", options: { sourceMap: false } },
         ],
+      },
+      {
+        test: /\.woff|woff2$/,
+        type: "asset/resource",
       },
     ],
   },

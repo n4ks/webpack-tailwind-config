@@ -38,6 +38,10 @@ module.exports = {
           { loader: "postcss-loader", options: { sourceMap: true } },
         ],
       },
+      {
+        test: /\.woff|woff2$/,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
