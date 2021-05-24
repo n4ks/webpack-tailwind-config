@@ -20,11 +20,36 @@
   font-display: swap;
 }
 
-body {
-  @apply font-page 
-         font-normal 
-         text-page 
-         min-w-mobile
-        text-color1
-         my-0 mx-auto;
+.quote-icon::before {
+  position: absolute;
+
+  top: -2.8rem;
+  left: 40%;
+
+  width: 46px;
+  height: 32px;
+
+  content: "";
+
+  background-image: url("../assets/images/quote-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.title-icon::before,
+.title-icon::after {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.title-cion::before {
+}
+
+.title-icon::after {
 }

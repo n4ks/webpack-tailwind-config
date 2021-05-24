@@ -1,4 +1,3 @@
-<!-- TODO разобраться с модификаторами на кнопках и сравнить размеры кнопок в проекте, также ссылки в футере и хедере -->
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -7,193 +6,502 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой Бизнес</title>
   </head>
-  <body>
-    <header class="site-header">
-      <nav class="site-header__nav">
-        <a href="#" class="site-menu__link btn btn--color-1">Личный кабинет</a>
-        <ul class="site-header__menu site-menu site-menu--color-1">
-          <!-- TODO Здесь список потому что в дальнейшем меню может расширяться + для соответствия меню футера -->
-          <!-- TODO Модификаторы вида color-1 создаются для того чтобы не привязываться к контексту цвета или местоположения элемента. Это делает элемент независимым -->
-          <li class="site-menu__item">
-            <a href="#" class="site-menu__link">Каталог услуг</a>
+  <body
+    class="font-page text-center px-2 bg-pageBg bg-top bg-no-repeat bg-contain"
+  >
+    <header class="mt-3 mb-6 flex flex-col items-center">
+      <nav>
+        <a
+          href="#"
+          class="
+            block
+            text-color4
+            bg-color5-base
+            hover:bg-color5-lighten
+            focus:bg-color5-lighten
+            active:bg-color5-darken
+            rounded-full
+            text-base
+            px-3
+            py-2
+            mb-8
+          "
+          >Личный кабинет</a
+        >
+        <ul class="mb-2">
+          <li>
+            <a href="#" class="text-base font-bold">Каталог услуг</a>
           </li>
         </ul>
       </nav>
-      <!-- TODO класс для внешней иконки -->
-      <button class="btn btn--no-bg">Онлайн помощник</button>
-      <a class="site-header__logo" href="#">
+      <button
+        type="button"
+        class="
+          flex flex-shrink-0
+          items-center
+          text-base
+          font-bold
+          w-64
+          box-border
+          text-color5-base
+          hover:text-color5-lighten
+          focus:text-color5-lighten
+          active:text-color5-darken
+        "
+      >
+        <span
+          class="
+            flex flex-shrink-0
+            items-center
+            justify-center
+            w-10
+            h-10
+            bg-color5-base
+            rounded-full
+          "
+        >
+          <svg
+            class="text-center"
+            width="14"
+            height="21"
+            viewBox="0 0 14 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.21252 17.1522L5.97124 20.4321H5.99567L7.77881 17.1522L5.99567 15.5769L4.21252 17.1522Z"
+              fill="white"
+            />
+            <path
+              d="M5.99567 1.58081C5.60484 1.75202 0.670654 4.04191 0.670654 7.70146C0.670654 10.826 3.57743 15.577 3.57743 15.577L5.99567 13.4583L8.41391 15.577C8.41391 15.577 11.3207 10.8474 11.3207 7.70146C11.2963 4.04191 6.36207 1.75202 5.99567 1.58081ZM7.5834 12.0244L5.99567 10.6334L4.40793 12.0244C4.33465 11.8318 3.25988 9.30652 3.25988 7.65865C3.25988 5.43296 5.80025 4.19172 5.99567 4.10611C6.19108 4.17031 8.73145 5.43296 8.73145 7.65865C8.73145 9.30652 7.65668 11.8318 7.5834 12.0244Z"
+              fill="white"
+            />
+            <path
+              d="M11.3092 -5.14109e-05L9.49561 1.58887L11.3092 3.17779L13.1228 1.58887L11.3092 -5.14109e-05Z"
+              fill="white"
+            />
+            <path
+              d="M7.26575 7.61443C7.26575 8.21864 6.70392 8.71495 6.01996 8.71495C5.336 8.71495 4.77417 8.21864 4.77417 7.61443C4.77417 7.01023 5.336 6.51392 6.01996 6.51392C6.70392 6.51392 7.26575 7.01023 7.26575 7.61443Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        <span class="ml-3">Онлайн помощник</span>
+      </button>
+      <a class="block order-first mb-16">
         <img
-          src=""
-          alt="Логотип цифровой платформы МойБизнес"
-          width="208"
+          src="./assets/images/logo.svg"
+          alt="Логотип цифровой платформы Мой Бизнес"
+          width="209"
           height="62"
         />
       </a>
     </header>
-    <main class="container">
-      <section class="promo">
-        <h1 class="promo__title page-title page-title--md">
+    <main>
+      <section class="mb-10">
+        <h1 class="mb-10 text-xl font-bold text-color2">
           Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать
           свой бизнес
         </h1>
-        <p class="promo__text">
+        <p class="text-lg font-bold mb-4">
           Для начала работы ответьте на вопрос, есть ли у вас уже существующий
           бизнес?
         </p>
-        <div class="promo__group-block">
-          <!-- TODO первая ссылка якорём ведёт к историям успеха, вторая к преимуществам -->
-          <a href="" class="promo__link btn btn--color-1"
+        <div>
+          <a
+            href=""
+            class="
+              block
+              text-color4
+              bg-color5-base
+              hover:bg-color5-lighten
+              focus:bg-color5-lighten
+              active:bg-color5-darken
+              rounded-full
+              text-base
+              px-3
+              py-3
+              w-full
+              mb-4
+            "
             >Да, у меня уже есть бизнес</a
-          ><a href="" class="promo__link btn btn--color-2"
+          ><a
+            href=""
+            class="
+              block
+              text-color4
+              bg-color6-base
+              hover:bg-color6-lighten
+              focus:bg-color6-lighten
+              active:bg-color6-darken
+              rounded-full
+              text-base
+              px-3
+              py-3
+              w-full
+            "
             >Нет, но планирую открыть</a
           >
         </div>
       </section>
-      <section class="features">
-        <h2
-          class="
-            features__title
-            page-title page-title--lg page-title--with-icons
-          "
-        >
-          Премущества
-        </h2>
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-3 text-color2">Преимущества</h2>
         <!-- TODO прописать размеры и alt изображениям -->
-        <ul class="features__list features-list">
-          <li class="features-list__item">
-            <img src="" alt="" class="features-list__picture" />
-            <bold class="features-list__numbers">482</bold>
-            <p class="features-list__text">
+        <ul>
+          <li class="mb-3">
+            <img
+              width="178"
+              height="165"
+              src="assets/images/feature-organisations.svg"
+              class="my-0 mx-auto"
+              alt=""
+            />
+            <bold class="text-4xl font-bold text-color6-base mb-1">482</bold>
+            <p class="text-base font-bold">
               Организаций поддержки по Российской Федерации
             </p>
-            <img src="" alt="" class="features-list__picture" />
-            <bold class="features-list__numbers">5240</bold>
-            <p class="features-list__text">
+          </li>
+          <li class="mb-3">
+            <img
+              width="204"
+              height="190"
+              src="assets/images/feature-services.svg"
+              class="my-0 mx-auto"
+              alt=""
+            />
+            <bold class="text-4xl font-bold text-color6-base mb-1">5240</bold>
+            <p class="text-base font-bold">
               Оказано услуг государственной поддержки
             </p>
-            <img src="" alt="" class="features-list__picture" />
-            <bold class="features-list__numbers">1360</bold>
-            <p class="features-list__text">
+          </li>
+          <li>
+            <img
+              width="179"
+              height="177"
+              src="assets/images/feature-participants.svg"
+              class="my-0 mx-auto"
+              alt=""
+            />
+            <bold class="text-4xl font-bold text-color6-base mb-1">1360</bold>
+            <p class="text-bae font-bold">
               Зарегестрировано участников проекта
             </p>
           </li>
         </ul>
       </section>
-      <section class="clients">
-        <h2
-          class="
-            clients__title
-            page-title page-title--lg page-title--with-icons
-          "
-        >
-          Истории успеха
-        </h2>
-        <ul class="clients__list clients-list">
-          <!-- TODO добавить alt и размеры когда доберусь до фото -->
-          <!-- TODO добавить кнопки читать историю с btn-right! -->
-          <!-- TODO учесть flex-order у второго элемента -->
-          <!-- TODO добавить иконки к кнопкам, рассмотреть необходимость добавления класса btn--icon (отдельно от -right/-left) -->
-          <li class="clients-list">
-            <img src="" alt="" class="clients-list__photo photo" />
-            <div class="clients-list__group-block">
-              <h3 class="clients-list__title page-title--sm">
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-3">Истории успеха</h2>
+        <ul>
+          <li class="mb-8">
+            <img alt="" />
+            <div>
+              <h3 class="text-xl font-bold mb-14 text-color2">
                 Пекарня “Русские традиции”
               </h3>
               <blockquote
                 class="
-                  clients-list__quote
-                  quote quote--color-1 quote--with-icon
+                  relative
+                  quote-icon
+                  text-base text-color5-base
+                  font-bold
+                  mb-3
                 "
               >
                 Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что
                 такое русская кухня», «обьяснить, что она жива».
               </blockquote>
-              <blockquote class="clients-list__quote quote">
+              <blockquote class="text-base text-color1 font-normal mb-2">
                 Чтобы мини-пекарня стала рентабельным бизнесом, необходимы
                 строгие расчеты, учет рисков и перспектив, анализ рынка,
                 налаживание сбыта.
               </blockquote>
-              <button class="clients-list__btn btn btn--icon btn--icon-right">
-                Читать историю
+              <button
+                class="
+                  block
+                  my-0
+                  mx-auto
+                  text-color4
+                  bg-color6-base
+                  hover:bg-color6-lighten
+                  focus:bg-color6-lighten
+                  active:bg-color6-darken
+                  rounded-full
+                  text-base
+                  px-3
+                  py-3
+                  w-4/5
+                  mb-4
+                "
+              >
+                <span class="pr-3">Читать историю</span>
+                <svg
+                  class="inline-block"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.01 3.65891H0V5.81888H12.01V9.05884L16 4.73889L12.01 0.418945V3.65891Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </div>
           </li>
-          <li class="clients-list">
-            <img src="" alt="" class="clients-list__photo photo" />
+          <li class="mb-8">
+            <img alt="" class="clients-list__photo photo" />
             <div class="clients-list__group-block">
-              <h3 class="clients-list__title page-title--sm">Автомастерская</h3>
+              <h3 class="text-xl font-bold mb-14 text-color2">
+                Автомастерская
+              </h3>
               <blockquote
                 class="
-                  clients-list__quote
-                  quote quote--color-1 quote--with-icon
+                  relative
+                  quote-icon
+                  text-base text-color5-base
+                  font-bold
+                  mb-3
                 "
               >
                 Первые дни независимости. Когда не нужно рано вставать, когда не
                 нужно отпрашиваться, что бы успеть съездить в магазин, когда
                 удобно.
               </blockquote>
-              <blockquote class="clients-list__quote quote">
+              <blockquote class="text-base text-color1 font-normal mb-2">
                 Встреча в городе Н с моими будущими партнерами была
                 плодотворной. Я не смог заснуть до пяти утра – не потому что не
                 спалось, но потому что мысли о будущих перспективах просто
                 взрывали мой мозг.
               </blockquote>
-              <button class="clients-list__btn btn btn--icon btn--icon-right">
-                Читать историю
+              <button
+                class="
+                  block
+                  my-0
+                  mx-auto
+                  text-color4
+                  bg-color6-base
+                  hover:bg-color6-lighten
+                  focus:bg-color6-lighten
+                  active:bg-color6-darken
+                  rounded-full
+                  text-base
+                  px-3
+                  py-3
+                  w-4/5
+                  mb-4
+                "
+              >
+                <span class="pr-3">Читать историю</span>
+                <svg
+                  class="inline-block"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.01 3.65891H0V5.81888H12.01V9.05884L16 4.73889L12.01 0.418945V3.65891Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </div>
           </li>
-          <li class="clients-list">
-            <img src="" alt="" class="clients-list__photo photo" />
+          <li>
+            <img alt="" class="clients-list__photo photo" />
             <div class="clients-list__group-block">
-              <h3 class="clients-list__title page-title--sm">
+              <h3 class="text-xl font-bold mb-14 text-color2">
                 Салон красоты “Эмират”
               </h3>
               <blockquote
                 class="
-                  clients-list__quote
-                  quote quote--color-1 quote--with-icon
+                  relative
+                  quote-icon
+                  text-base text-color5-base
+                  font-bold
+                  mb-2
                 "
               >
                 Когда же появилась возможность открыть свой бизнес, я
                 рассматривала различные варианты, изучала всевозможные
                 направления.
               </blockquote>
-              <button class="clients-list__btn btn--icon btn btn--icon-right">
-                Читать историю
+              <button
+                class="
+                  block
+                  my-0
+                  mx-auto
+                  text-color4
+                  bg-color6-base
+                  hover:bg-color6-lighten
+                  focus:bg-color6-lighten
+                  active:bg-color6-darken
+                  rounded-full
+                  text-base
+                  px-3
+                  py-3
+                  w-4/5
+                "
+              >
+                <span class="pr-3">Читать историю</span>
+                <svg
+                  class="inline-block"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.01 3.65891H0V5.81888H12.01V9.05884L16 4.73889L12.01 0.418945V3.65891Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </div>
           </li>
         </ul>
       </section>
-      <section class="questions">
-        <h2 class="clients__title page-title page-title--md">Есть вопросы?</h2>
-        <p class="questions__text">
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-3 text-color1">Есть вопросы?</h2>
+        <p class="text-lg text-color1 font-normal mb-3">
           Задайте интересующие вас вопросы онлайн помощнику
         </p>
-        <button class="btn btn--icon btn--icon-left">Онлайн помощник</button>
+        <button
+          class="
+            block
+            my-0
+            mx-auto
+            text-color4
+            bg-color5-base
+            hover:bg-color5-lighten
+            focus:bg-color5-lighten
+            active:bg-color5-darken
+            rounded-full
+            text-base
+            px-3
+            py-2
+            w-4/5
+            mb-3
+          "
+        >
+          <svg
+            class="inline-block"
+            width="14"
+            height="21"
+            viewBox="0 0 14 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.21252 17.1522L5.97124 20.4321H5.99567L7.77881 17.1522L5.99567 15.5769L4.21252 17.1522Z"
+              fill="white"
+            />
+            <path
+              d="M5.99567 1.58081C5.60484 1.75202 0.670654 4.04191 0.670654 7.70146C0.670654 10.826 3.57743 15.577 3.57743 15.577L5.99567 13.4583L8.41391 15.577C8.41391 15.577 11.3207 10.8474 11.3207 7.70146C11.2963 4.04191 6.36207 1.75202 5.99567 1.58081ZM7.5834 12.0244L5.99567 10.6334L4.40793 12.0244C4.33465 11.8318 3.25988 9.30652 3.25988 7.65865C3.25988 5.43296 5.80025 4.19172 5.99567 4.10611C6.19108 4.17031 8.73145 5.43296 8.73145 7.65865C8.73145 9.30652 7.65668 11.8318 7.5834 12.0244Z"
+              fill="white"
+            />
+            <path
+              d="M11.3092 -5.14109e-05L9.49561 1.58887L11.3092 3.17779L13.1228 1.58887L11.3092 -5.14109e-05Z"
+              fill="white"
+            />
+            <path
+              d="M7.26575 7.61443C7.26575 8.21864 6.70392 8.71495 6.01996 8.71495C5.336 8.71495 4.77417 8.21864 4.77417 7.61443C4.77417 7.01023 5.336 6.51392 6.01996 6.51392C6.70392 6.51392 7.26575 7.01023 7.26575 7.61443Z"
+              fill="white"
+            />
+          </svg>
+          <span class="pl-1">Онлайн помощник</span>
+        </button>
       </section>
     </main>
-    <footer class="site-footer">
-      <!-- TODO подумать как через минимальное количество модификаторов поменять hover, focus, active на ссылках -->
-      <ul class="site-footer__menu site-menu site-menu--color-2">
-        <li class="site-menu__item">
-          <a href="#" class="site-menu__link">Услуги и поддержка</a>
+    <footer class="bg-color2 pt-2">
+      <ul class="mb-5">
+        <li class="mb-3">
+          <a
+            href="#"
+            class="
+              text-base
+              font-bold
+              text-color4
+              hover:text-color5-lighten
+              focus:text-color5-lighten
+              active:text-color5-darken
+            "
+            >Услуги и поддержка</a
+          >
         </li>
-        <li class="site-menu__item">
-          <a href="#" class="site-menu__link">Сервисы для бизнеса</a>
+        <li class="mb-3">
+          <a
+            href="#"
+            class="
+              text-base
+              font-bold
+              text-color4
+              hover:text-color5-lighten
+              focus:text-color5-lighten
+              active:text-color5-darken
+            "
+            >Сервисы для бизнеса</a
+          >
         </li>
-        <li class="site-menu__item">
-          <a href="#" class="site-menu__link">Общая информация</a>
+        <li class="mb-3">
+          <a
+            href="#"
+            class="
+              text-base
+              font-bold
+              text-color4
+              hover:text-color5-lighten
+              focus:text-color5-lighten
+              active:text-color5-darken
+            "
+            >Общая информация</a
+          >
         </li>
-        <li class="site-menu__item">
-          <a href="#" class="site-menu__link">Защита бизнеса</a>
+        <li>
+          <a
+            href="#"
+            class="
+              block
+              text-base
+              font-bold
+              text-color4
+              hover:text-color5-lighten
+              focus:text-color5-lighten
+              active:text-color5-darken
+            "
+            >Защита бизнеса</a
+          >
         </li>
       </ul>
-      <a href="mailto:service@in-line.ru" class="site-footer__email email-link"
+      <a
+        href="mailto:service@in-line.ru"
+        class="
+          block
+          text-base
+          font-bold
+          text-color4
+          hover:text-color5-lighten
+          focus:text-color5-lighten
+          active:text-color5-darken
+          mb-3
+        "
         >service@in-line.ru</a
       >
-      <a href="tel:88002007430" class="site-footer__phone phone-link"
+      <a
+        href="tel:88002007430"
+        class="
+          block
+          text-base
+          font-bold
+          text-color4
+          hover:text-color5-lighten
+          focus:text-color5-lighten
+          active:text-color5-darken
+        "
         >8-800-200-74-30</a
       >
     </footer>

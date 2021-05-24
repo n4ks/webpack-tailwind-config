@@ -12,7 +12,6 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js",
   },
-
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, "./dist"),
@@ -23,6 +22,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
       {
         test: /\.css$/,
         exclude: /node_modules/,
@@ -39,7 +42,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.woff|woff2$/,
+        test: /\.(woff2|woff)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg)$/i,
         type: "asset/resource",
       },
     ],
