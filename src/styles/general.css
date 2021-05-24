@@ -40,16 +40,15 @@
 .title-icon::after {
   position: absolute;
 
-  width: 10px;
-  height: 10px;
-
   content: "";
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
-.title-cion::before {
+  @apply w-2 h-2 top-3.5 bg-color5-base transform rotate-45;
 }
 
 .title-icon::after {
+  @apply left-0;
+}
+
+.title-icon::before {
+  @apply right-0;
 }
