@@ -36,6 +36,13 @@
   background-position: 0 0;
 }
 
+@media (min-width: 720px) {
+  .quote-icon::before {
+    top: 0.4rem;
+    left: -15%;
+  }
+}
+
 .title-icon::before,
 .title-icon::after {
   position: absolute;

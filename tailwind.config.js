@@ -16,11 +16,12 @@ const Palette = {
 };
 
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     fontFamily: {
       page: ["Open Sans", "Arial", "sans-serif"],
     },
+
     minWidth: {
       mobile: "20rem",
     },
@@ -36,6 +37,14 @@ module.exports = {
       backgroundImage: {
         onlineHelperIcon: "url('/src/assets/images/icon-online-helper.svg')",
         pageBg: "url('/src/assets/images/background.jpg')",
+      },
+      width: {
+        104: "26rem",
+        tabletContainer: "700px",
+      },
+      screens: {
+        tablet: "720px",
+        desktop: "1150px",
       },
     },
   },
