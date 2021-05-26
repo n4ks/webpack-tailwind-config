@@ -39,8 +39,13 @@ module.exports = {
         pageBg: "url('/src/assets/images/background.jpg')",
       },
       width: {
+        // 100: "25rem",
         104: "26rem",
+        202: "50.5rem",
         tabletContainer: "700px",
+      },
+      margin: {
+        141: "35.25rem",
       },
       screens: {
         tablet: "720px",
