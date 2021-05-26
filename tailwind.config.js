@@ -43,7 +43,7 @@ module.exports = {
         104: "26rem",
         202: "50.5rem",
         230: "57.5rem",
-        250: "62.5rem",
+        255: "63.75rem",
         "fit-content": "fit-content",
         // tabletContainer: "700px",
       },
