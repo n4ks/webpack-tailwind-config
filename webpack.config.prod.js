@@ -5,11 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const PurgecssPlugin = require("purgecss-webpack-plugin");
-const PATHS = {
-  src: path.join(__dirname, "src"),
-};
-// ! Посмотреть как сделать перенос шрифтов, картинок и иконок в прод (с помощью новых модулей assets)
+
 module.exports = {
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
@@ -45,7 +41,7 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.svg$/i,
+        test: /\.(png|svg|jpg|jpeg)$/i,
         type: "asset/resource",
       },
     ],
@@ -64,11 +60,7 @@ module.exports = {
         ],
       },
     }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-    }),
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/index.html",
