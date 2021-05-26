@@ -36,16 +36,15 @@ module.exports = {
       },
       backgroundImage: {
         onlineHelperIcon: "url('/src/assets/images/icon-online-helper.svg')",
-        pageBg: "url('/src/assets/images/background.jpg')",
+        pageBg: "url('/src/assets/images/background.svg')",
       },
       width: {
-        // 100: "25rem",
         104: "26rem",
         202: "50.5rem",
         230: "57.5rem",
         255: "63.75rem",
         "fit-content": "fit-content",
-        // tabletContainer: "700px",
+        tablet: "720px",
       },
       margin: {
         141: "35.25rem",

@@ -20,6 +20,14 @@
   font-display: swap;
 }
 
+body {
+  background-image: url("/src/assets/images/background.svg"),
+    url("../assets/images/background-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top center, bottom 3.5% center;
+  background-size: contain, auto;
+}
+
 .quote-icon::before {
   position: absolute;
 
@@ -34,19 +42,6 @@
   background-image: url("../assets/images/quote-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-@media (min-width: 720px) {
-  .quote-icon::before {
-    top: 0.4rem;
-    left: -15%;
-  }
-}
-
-@media (min-width: 1150px) {
-  .quote-icon::before {
-    left: 0;
-  }
 }
 
 .title-icon::before,
@@ -68,7 +63,23 @@
   right: -8%;
 }
 
+@media (min-width: 720px) {
+  .quote-icon::before {
+    top: 0.4rem;
+    left: -15%;
+  }
+}
+
 @media (min-width: 1150px) {
+  body {
+    background-size: 1920px auto;
+    background-position: top center, bottom 2% center;
+  }
+
+  .quote-icon::before {
+    left: 0;
+  }
+
   .title-icon::before,
   .title-icon::after {
     top: 1.475rem;

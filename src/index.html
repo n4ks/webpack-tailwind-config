@@ -6,16 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой Бизнес</title>
   </head>
-  <body
-    class="
-      font-page
-      text-center
-      bg-pageBg bg-top bg-no-repeat bg-contain
-      desktop:bg-auto
-    "
-  >
+  <body class="font-page text-center">
     <div class="px-2 max-w-screen-desktop mx-auto desktop:px-5">
-      <!--TODO добавить тег picture и изображения высокого качества из фигмы-->
       <header
         class="
           mb-6
@@ -23,7 +15,7 @@
           items-center
           tablet:mt-8
           tablet:items-start
-          tablet:mb-24
+          tablet:mb-36
           desktop:mb-16
         "
       >
@@ -61,7 +53,17 @@
             >
             <ul class="mb-2 tablet:mb-0 tablet:inline-block">
               <li>
-                <a href="#" class="text-base font-bold">Каталог услуг</a>
+                <a
+                  href="#"
+                  class="
+                    text-base
+                    font-bold
+                    hover:text-color5-lighten
+                    focus:text-color5-lighten
+                    active:text-color5-darken
+                  "
+                  >Каталог услуг</a
+                >
               </li>
             </ul>
           </nav>
@@ -122,7 +124,7 @@
             <span class="ml-3">Онлайн помощник</span>
           </button>
         </div>
-        <a class="block order-first mb-16 tablet:order-last tablet:mb-0 ml-1">
+        <a class="block order-first mb-20 tablet:order-last tablet:mb-0 ml-1">
           <img
             src="./assets/images/logo.svg"
             alt="Логотип цифровой платформы Мой Бизнес"
@@ -139,7 +141,7 @@
               text-xl
               font-bold
               text-color2
-              tablet:mb-16
+              tablet:mb-20
               tablet:px-28
               tablet:ml-1
               desktop:pl-0
@@ -177,7 +179,7 @@
             "
           >
             <a
-              href=""
+              href="#features"
               class="
                 block
                 text-color4
@@ -199,7 +201,7 @@
               "
               >Да, у меня уже есть бизнес</a
             ><a
-              href=""
+              href="#stories"
               class="
                 block
                 text-color4
@@ -219,7 +221,7 @@
             >
           </div>
         </section>
-        <section class="mb-10 desktop:mb-60">
+        <section id="features" class="mb-10 desktop:mb-60">
           <h2
             class="
               relative
@@ -236,7 +238,6 @@
           >
             Преимущества
           </h2>
-          <!-- TODO прописать размеры и alt изображениям -->
           <ul
             class="
               tablet:px-28
@@ -253,7 +254,7 @@
                 height="190"
                 src="assets/images/feature-organisations.svg"
                 class="my-0 mx-auto"
-                alt=""
+                alt="Организации"
               />
               <b
                 class="
@@ -277,7 +278,7 @@
                 height="190"
                 src="assets/images/feature-services.svg"
                 class="my-0 mx-auto"
-                alt=""
+                alt="Услуги"
               />
               <b
                 class="
@@ -301,7 +302,7 @@
                 height="190"
                 src="assets/images/feature-participants.svg"
                 class="my-0 mx-auto"
-                alt=""
+                alt="Участники проекта"
               />
               <b
                 class="
@@ -321,7 +322,7 @@
             </li>
           </ul>
         </section>
-        <section class="mb-10 desktop:w-255 desktop:mx-auto">
+        <section id="stories" class="mb-56 desktop:w-255 desktop:mx-auto">
           <h2
             class="
               relative
@@ -339,13 +340,23 @@
           </h2>
           <ul class="tablet:px-28 desktop:px-0">
             <li class="mb-8 desktop:flex desktop:mb-12">
-              <img
-                alt="Владелец пекарни"
-                src="assets/images/bakery-owner.png"
-                width="327"
-                height="306"
-                class="mx-auto desktop:mx-0"
-              />
+              <picture class="mx-auto desktop:mx-0 desktop:flex-shrink-0">
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/images/bakery-owner.webp    1x,
+                    assets/images/bakery-owner-2x.webp 2x
+                  "
+                />
+                <img
+                  alt="Владелец пекарни"
+                  src="assets/images/bakery-owner.png"
+                  srcset="assets/images/bakery-owner-2x.png 2x"
+                  width="327"
+                  height="306"
+                  class="mx-auto"
+                />
+              </picture>
               <div class="desktop:pl-16 desktop:pt-12">
                 <h3
                   class="
@@ -433,13 +444,31 @@
               </div>
             </li>
             <li class="mb-8 desktop:flex desktop:mb-12">
-              <img
-                alt="Владелец автомастерской"
-                class="mx-auto desktop:order-last desktop:mx-0"
-                src="assets/images/car-repair-owner.png"
-                width="324"
-                height="348"
-              />
+              <picture
+                class="
+                  mx-auto
+                  desktop:order-last
+                  desktop:mx-0
+                  desktop:flex-shrink-0
+                "
+              >
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/images/car-repair-owner.webp    1x,
+                    assets/images/car-repair-owner-2x.webp 2x
+                  "
+                />
+                <img
+                  alt="Владелец автомастерской"
+                  src="assets/images/car-repair-owner.png"
+                  srcset="assets/images/car-repair-owner-2x.png 2x"
+                  width="324"
+                  height="348"
+                  class="mx-auto"
+                />
+              </picture>
+
               <div class="desktop:pt-12 desktop:pt-16">
                 <h3
                   class="
@@ -527,13 +556,23 @@
               </div>
             </li>
             <li class="desktop:flex">
-              <img
-                alt="Владелец салона красоты"
-                class="mx-auto desktop:mx-0"
-                src="assets/images/beauty-shop-owner.png"
-                width="361"
-                height="338"
-              />
+              <picture class="mx-auto desktop:mx-0 desktop:flex-shrink-0">
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/images/beauty-shop-owner.webp    1x,
+                    assets/images/beauty-shop-owner-2x.webp 2x
+                  "
+                />
+                <img
+                  alt="Владелец салона красоты"
+                  src="assets/images/beauty-shop-owner.png"
+                  srcset="assets/images/beauty-shop-owner-2x.png 2x"
+                  width="361"
+                  height="338"
+                  class="mx-auto"
+                />
+              </picture>
               <div class="desktop:pt-12 desktop:pt-16">
                 <h3
                   class="
@@ -607,7 +646,7 @@
             </li>
           </ul>
         </section>
-        <section class="mb-10 desktop:w-72 desktop:mx-auto">
+        <section class="mb-10 desktop:w-72 desktop:mx-auto desktop:mb-16">
           <h2 class="text-3xl font-bold mb-3 text-color1 desktop:text-4xl">
             Есть вопросы?
           </h2>
@@ -637,7 +676,6 @@
               px-3
               py-2
               w-4/5
-              mb-3
               max-w-sm
               desktop:w-11/12
             "
@@ -672,53 +710,89 @@
         </section>
       </main>
     </div>
-    <footer class="max-w-screen-desktop px-2 pt-2 bg-color2">
-      <ul class="mb-5">
-        <li class="mb-3">
+    <footer class="px-2 pt-2 bg-color2 desktop:py-8 desktop:text-left">
+      <div
+        class="
+          max-w-screen-desktop
+          desktop:mx-auto
+          desktop:flex
+          desktop:justify-between
+        "
+      >
+        <ul
+          class="
+            mb-5
+            desktop:mb-0
+            desktop:flex
+            desktop:w-tablet
+            desktop:justify-between
+          "
+        >
+          <li class="mb-3 desktop:mb-0">
+            <a
+              href="#"
+              class="
+                text-base
+                font-bold
+                text-color4
+                hover:text-color5-lighten
+                focus:text-color5-lighten
+                active:text-color5-darken
+                desktop:text-sm
+              "
+              >Услуги и поддержка</a
+            >
+          </li>
+          <li class="mb-3 desktop:mb-0">
+            <a
+              href="#"
+              class="
+                text-base
+                font-bold
+                text-color4
+                hover:text-color5-lighten
+                focus:text-color5-lighten
+                active:text-color5-darken
+                desktop:text-sm
+              "
+              >Сервисы для бизнеса</a
+            >
+          </li>
+          <li class="mb-3 desktop:mb-0">
+            <a
+              href="#"
+              class="
+                text-base
+                font-bold
+                text-color4
+                hover:text-color5-lighten
+                focus:text-color5-lighten
+                active:text-color5-darken
+                desktop:text-sm
+              "
+              >Общая информация</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="
+                block
+                text-base
+                font-bold
+                text-color4
+                hover:text-color5-lighten
+                focus:text-color5-lighten
+                active:text-color5-darken
+                desktop:text-sm
+              "
+              >Защита бизнеса</a
+            >
+          </li>
+        </ul>
+        <div class="desktop:w-72 desktop:flex desktop:justify-between">
           <a
-            href="#"
-            class="
-              text-base
-              font-bold
-              text-color4
-              hover:text-color5-lighten
-              focus:text-color5-lighten
-              active:text-color5-darken
-            "
-            >Услуги и поддержка</a
-          >
-        </li>
-        <li class="mb-3">
-          <a
-            href="#"
-            class="
-              text-base
-              font-bold
-              text-color4
-              hover:text-color5-lighten
-              focus:text-color5-lighten
-              active:text-color5-darken
-            "
-            >Сервисы для бизнеса</a
-          >
-        </li>
-        <li class="mb-3">
-          <a
-            href="#"
-            class="
-              text-base
-              font-bold
-              text-color4
-              hover:text-color5-lighten
-              focus:text-color5-lighten
-              active:text-color5-darken
-            "
-            >Общая информация</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
+            href="mailto:service@in-line.ru"
             class="
               block
               text-base
@@ -727,38 +801,28 @@
               hover:text-color5-lighten
               focus:text-color5-lighten
               active:text-color5-darken
+              mb-3
+              desktop:mb-0
+              desktop:text-sm
             "
-            >Защита бизнеса</a
+            >service@in-line.ru</a
           >
-        </li>
-      </ul>
-      <a
-        href="mailto:service@in-line.ru"
-        class="
-          block
-          text-base
-          font-bold
-          text-color4
-          hover:text-color5-lighten
-          focus:text-color5-lighten
-          active:text-color5-darken
-          mb-3
-        "
-        >service@in-line.ru</a
-      >
-      <a
-        href="tel:88002007430"
-        class="
-          block
-          text-base
-          font-bold
-          text-color4
-          hover:text-color5-lighten
-          focus:text-color5-lighten
-          active:text-color5-darken
-        "
-        >8-800-200-74-30</a
-      >
+          <a
+            href="tel:88002007430"
+            class="
+              block
+              text-base
+              font-bold
+              text-color4
+              hover:text-color5-lighten
+              focus:text-color5-lighten
+              active:text-color5-darken
+              desktop:text-sm
+            "
+            >8-800-200-74-30</a
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>
