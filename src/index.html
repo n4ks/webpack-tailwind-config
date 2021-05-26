@@ -132,7 +132,7 @@
         </a>
       </header>
       <main>
-        <section class="mb-10">
+        <section class="mb-10 desktop:mb-72">
           <h1
             class="
               mb-10
@@ -219,34 +219,55 @@
             >
           </div>
         </section>
-        <section class="mb-10">
+        <section class="mb-10 desktop:mb-60">
           <h2
             class="
               relative
               block
-              w-72
+              w-fit-content
               title-icon
               text-3xl
               font-bold
               mx-auto
               mb-3
               text-color2
+              desktop:text-4.5xl
             "
           >
             Преимущества
           </h2>
           <!-- TODO прописать размеры и alt изображениям -->
-          <ul class="tablet:px-28 desktop:flex">
+          <ul
+            class="
+              tablet:px-28
+              desktop:flex
+              desktop:w-230
+              desktop:px-0
+              desktop:mx-auto
+              desktop:justify-between
+            "
+          >
             <li class="mb-3 desktop:mb-0 desktop:w-2/6">
               <img
                 width="178"
-                height="165"
+                height="190"
                 src="assets/images/feature-organisations.svg"
                 class="my-0 mx-auto"
                 alt=""
               />
-              <b class="text-4xl font-bold text-color6-base mb-1">482</b>
-              <p class="text-base font-bold">
+              <b
+                class="
+                  block
+                  text-4xl
+                  font-bold
+                  text-color6-base
+                  mb-1
+                  desktop:text-5xl
+                  desktop:mb-3
+                "
+                >482</b
+              >
+              <p class="text-base font-bold desktop:px-1 desktop:text-xl">
                 Организаций поддержки по Российской Федерации
               </p>
             </li>
@@ -258,41 +279,84 @@
                 class="my-0 mx-auto"
                 alt=""
               />
-              <b class="text-4xl font-bold text-color6-base mb-1">5240</b>
-              <p class="text-base font-bold">
+              <b
+                class="
+                  block
+                  text-4xl
+                  font-bold
+                  text-color6-base
+                  mb-1
+                  desktop:text-5xl
+                  desktop:mb-3
+                "
+                >5240</b
+              >
+              <p class="text-base font-bold desktop:px-1 desktop:text-xl">
                 Оказано услуг государственной поддержки
               </p>
             </li>
             <li class="desktop:w-2/6">
               <img
                 width="179"
-                height="177"
+                height="190"
                 src="assets/images/feature-participants.svg"
                 class="my-0 mx-auto"
                 alt=""
               />
-              <b class="text-4xl font-bold text-color6-base mb-1">1360</b>
-              <p class="text-bae font-bold">
+              <b
+                class="
+                  block
+                  text-4xl
+                  font-bold
+                  text-color6-base
+                  mb-1
+                  desktop:text-5xl
+                  desktop:mb-3
+                "
+                >1360</b
+              >
+              <p class="text-bae font-bold desktop:px-2 desktop:text-xl">
                 Зарегестрировано участников проекта
               </p>
             </li>
           </ul>
         </section>
-        <section class="mb-10">
-          <h2 class="relative block title-icon text-3xl w-72 font-bold mx-auto">
+        <section class="mb-10 desktop:w-250">
+          <h2
+            class="
+              relative
+              block
+              title-icon
+              text-3xl
+              w-fit-content
+              font-bold
+              mx-auto
+              desktop:text-4.5xl
+              desktop:mb-24
+            "
+          >
             Истории успеха
           </h2>
-          <ul class="tablet:px-28">
-            <li class="mb-8">
+          <ul class="tablet:px-28 desktop:px-0">
+            <li class="mb-8 desktop:flex">
               <img
                 alt="Владелец пекарни"
                 src="assets/images/bakery-owner.png"
                 width="327"
                 height="306"
-                class="mx-auto"
+                class="mx-auto desktop:mx-0"
               />
               <div>
-                <h3 class="text-xl font-bold mb-14 text-color2 tablet:mb-4">
+                <h3
+                  class="
+                    text-xl
+                    font-bold
+                    mb-14
+                    text-color2
+                    tablet:mb-4
+                    desktop:text-2xl
+                  "
+                >
                   Пекарня “Русские традиции”
                 </h3>
                 <blockquote
@@ -352,16 +416,25 @@
                 </button>
               </div>
             </li>
-            <li class="mb-8">
+            <li class="mb-8 desktop:flex">
               <img
                 alt="Владелец автомастерской"
-                class="mx-auto"
+                class="mx-auto desktop:order-last desktop:mx-0"
                 src="assets/images/car-repair-owner.png"
                 width="324"
                 height="348"
               />
               <div class="clients-list__group-block">
-                <h3 class="text-xl font-bold mb-14 text-color2 tablet:mb-4">
+                <h3
+                  class="
+                    text-xl
+                    font-bold
+                    mb-14
+                    text-color2
+                    tablet:mb-4
+                    desktop:text-2xl
+                  "
+                >
                   Автомастерская
                 </h3>
                 <blockquote
@@ -423,16 +496,25 @@
                 </button>
               </div>
             </li>
-            <li>
+            <li class="desktop:flex">
               <img
                 alt="Владелец салона красоты"
-                class="mx-auto"
+                class="mx-auto desktop:mx-0"
                 src="assets/images/beauty-shop-owner.png"
                 width="361"
                 height="338"
               />
               <div class="clients-list__group-block">
-                <h3 class="text-xl font-bold mb-14 text-color2 tablet:mb-4">
+                <h3
+                  class="
+                    text-xl
+                    font-bold
+                    mb-14
+                    text-color2
+                    tablet:mb-4
+                    desktop:text-2xl
+                  "
+                >
                   Салон красоты “Эмират”
                 </h3>
                 <blockquote

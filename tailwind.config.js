@@ -42,7 +42,10 @@ module.exports = {
         // 100: "25rem",
         104: "26rem",
         202: "50.5rem",
-        tabletContainer: "700px",
+        230: "57.5rem",
+        250: "62.5rem",
+        "fit-content": "fit-content",
+        // tabletContainer: "700px",
       },
       margin: {
         141: "35.25rem",
@@ -50,6 +53,9 @@ module.exports = {
       screens: {
         tablet: "720px",
         desktop: "1150px",
+      },
+      fontSize: {
+        "4.5xl": ["2.5rem", "3.063rem"],
       },
     },
   },

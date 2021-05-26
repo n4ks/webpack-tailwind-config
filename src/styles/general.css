@@ -49,13 +49,22 @@
 
   content: "";
 
-  @apply w-2 h-2 top-3.5 bg-color5-base transform rotate-45;
+  top: 0.975rem;
+
+  @apply w-2 h-2 bg-color5-base transform rotate-45;
 }
 
 .title-icon::after {
-  @apply left-0;
+  left: -8%;
 }
 
 .title-icon::before {
-  @apply right-0;
+  right: -8%;
+}
+
+@media (min-width: 1150px) {
+  .title-icon::before,
+  .title-icon::after {
+    top: 1.475rem;
+  }
 }
